@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,272 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html {
+  cursor: url("data:image/svg+xml,%3Csvg height='18' width='18' viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' fill='%23bbbbbbdb' r='4'/%3E%3C/svg%3E")
+      3 3,
+    auto;
+}
+
+*,
+body {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ion-button {
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+ion-card {
+  border-radius: 20px;
+}
+
+ion-badge {
+  font-size: 0.85rem;
+  font-weight: 400;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background-color: var(--ion-color-primary);
+  color: #fff;
+}
+
+.sub-title {
+  color: var(--ion-color-medium);
+}
+
+.gradient-text {
+  background-clip: text;
+  background-image: linear-gradient(
+    to bottom left,
+    #92f2ff,
+    #50e3f5,
+    #b67afe,
+    #ff0084
+  );
+  background-size: 300% 100%;
+  animation: Anim 4s ease infinite;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.carroussel__wrapper {
+  position: relative;
+  overflow: hidden;
+  max-width: 100rem;
+  margin: 3rem 0;
+  margin-top: 5rem;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  .caroussel__gradient {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 1;
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#fff),
+      color-stop(50%, hsla(0, 0%, 100%, 0)),
+      to(#fff)
+    );
+    background-image: linear-gradient(
+      90deg,
+      #fff,
+      hsla(0, 0%, 100%, 0) 50%,
+      #fff
+    );
+  }
+
+  .caroussel__items {
+    animation: services 24s linear infinite;
+    white-space: nowrap;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .caroussel__item {
+    display: inline-block;
+    margin-right: 16px;
+    color: #c5cee2;
+    font-size: 3rem;
+    line-height: 125%;
+    word-spacing: 10px;
+  }
+}
+
+.pattern-1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.pattern-2 {
+  position: absolute;
+  top: 300px;
+  right: 0px;
+}
+
+.pattern-3 {
+  position: absolute;
+  top: -4rem;
+  right: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .hide-app {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hide-web {
+    display: none !important;
+  }
+}
+
+// ANIMATIONS
+
+@keyframes Anim {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 99% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@keyframes floatingimage {
+  0% {
+    transform: translateY(0rem) translateX(0rem);
+  }
+  50% {
+    transform: translateY(1rem) translateX(-0.5rem);
+  }
+  100% {
+    transform: translateY(0rem) translateX(0rem);
+  }
+}
+
+@keyframes rotate_cirkel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes floatingelement {
+  0% {
+    transform: translateY(1rem);
+  }
+  50% {
+    transform: translateY(0rem);
+  }
+  100% {
+    transform: translateY(1rem);
+  }
+}
+
+@keyframes heroImgWrap {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes services {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+ion-icon {
+  &[class*="icon-"] {
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background: currentColor;
+  }
+  // paint
+  &[class*="icon-paint"] {
+    mask-image: url(assets/icon/paint.svg);
+  }
+  // lamp
+  &[class*="icon-lamp"] {
+    mask-image: url(assets/icon/lamp.svg);
+  }
+  // play
+  &[class*="icon-play"] {
+    mask-image: url(assets/icon/play.svg);
+  }
+  // instagram
+  &[class*="icon-instagram"] {
+    mask-image: url(assets/icon/instagram.svg);
+  }
+  // github
+  &[class*="icon-github"] {
+    mask-image: url(assets/icon/github.svg);
+  }
+  // twitter
+  &[class*="icon-twitter"] {
+    mask-image: url(assets/icon/twitter.svg);
+  }
+  // tiktok
+  &[class*="icon-tiktok"] {
+    mask-image: url(assets/icon/tiktok.svg);
+  }
+}

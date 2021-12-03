@@ -1,0 +1,70 @@
+
+        <svg fill="none" height="428" viewBox="0 0 257 428" width="257" xmlns="http://www.w3.org/2000/svg"
+            class="blog-pattern-1">
+            <filter id="a" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="206" width="186"
+                x=".5" y="150.5">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                </feColorMatrix>
+                <feOffset dy="2.76726"></feOffset>
+                <feGaussianBlur stdDeviation="1.1069"></feGaussianBlur>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0"></feColorMatrix>
+                <feBlend in2="BackgroundImageFix" mode="normal" result="effect1_dropShadow"></feBlend>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                </feColorMatrix>
+                <feOffset dy="6.6501"></feOffset>
+                <feGaussianBlur stdDeviation="2.66004"></feGaussianBlur>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04317 0"></feColorMatrix>
+                <feBlend in2="effect1_dropShadow" mode="normal" result="effect2_dropShadow"></feBlend>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                </feColorMatrix>
+                <feOffset dy="12.5216"></feOffset>
+                <feGaussianBlur stdDeviation="5.00862"></feGaussianBlur>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0339075 0"></feColorMatrix>
+                <feBlend in2="effect2_dropShadow" mode="normal" result="effect3_dropShadow"></feBlend>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                </feColorMatrix>
+                <feOffset dy="22.3363"></feOffset>
+                <feGaussianBlur stdDeviation="8.93452"></feGaussianBlur>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0282784 0"></feColorMatrix>
+                <feBlend in2="effect3_dropShadow" mode="normal" result="effect4_dropShadow"></feBlend>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                </feColorMatrix>
+                <feOffset dy="41.7776"></feOffset>
+                <feGaussianBlur stdDeviation="16.711"></feGaussianBlur>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0235573 0"></feColorMatrix>
+                <feBlend in2="effect4_dropShadow" mode="normal" result="effect5_dropShadow"></feBlend>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                </feColorMatrix>
+                <feOffset dy="100"></feOffset>
+                <feGaussianBlur stdDeviation="40"></feGaussianBlur>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0174624 0"></feColorMatrix>
+                <feBlend in2="effect5_dropShadow" mode="normal" result="effect6_dropShadow"></feBlend>
+                <feBlend in="SourceGraphic" in2="effect6_dropShadow" mode="normal" result="shape"></feBlend>
+            </filter>
+            <g opacity=".1" stroke="#000">
+                <path d="m81 227h25v25h-25z"></path>
+                <path d="m31 76h25v25h-25z"></path>
+                <path d="m56 76h25v25h-25z"></path>
+                <path d="m81 126h25v25h-25z"></path>
+                <path d="m81 151h25v25h-25z"></path>
+                <path d="m131 126h25v25h-25z"></path>
+                <path d="m31 226h25v25h-25z"></path>
+                <path d="m6 402h25v25h-25z"></path>
+                <path d="m106 227h25v25h-25z"></path>
+                <path d="m231 202h25v25h-25z"></path>
+                <path d="m131 302h25v25h-25z"></path>
+                <path d="m181 302h25v25h-25z"></path>
+                <path d="m156 302h25v25h-25z"></path>
+                <path d="m156 327h25v25h-25z"></path>
+                <path d="m106 202h50v25h-50z"></path>
+                <path d="m6 26h25v25h-25z"></path>
+                <path d="m31 51h25v25h-25z"></path>
+                <path d="m6 1h25v25h-25z"></path>
+                <path d="m81 252h25v25h-25z"></path>
+            </g>
+            <g filter="url(#a)">
+                <path d="m81 151h25v25h-25z" fill="#fff"></path>
+                <path d="m81 151h25v25h-25z" stroke="#e2e2e2"></path>
+            </g>
+        </svg>

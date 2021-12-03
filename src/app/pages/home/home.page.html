@@ -1,0 +1,427 @@
+<ion-content [fullscreen]="true">
+    <ion-header class="ion-no-border">
+        <ion-toolbar class="ion-padding">
+            <ion-grid fixed>
+                <ion-row>
+                    <ion-col size="6">
+                        <div class="logo"></div>
+                        <ion-label>
+                            <h2>erikcodes.</h2>
+                        </ion-label>
+                    </ion-col>
+                    <ion-col size="6" class="d-flex ion-align-items-center hide-app">
+                        <ion-buttons class="ml-auto">
+                            <ion-button (click)="scrollTo('about')">
+                                About
+                            </ion-button>
+                            <ion-button (click)="scrollTo('services')">
+                                Services
+                            </ion-button>
+                            <ion-button (click)="scrollTo('projects')">
+                                Projects
+                            </ion-button>
+                            <ion-button (click)="scrollTo('laboratory')">
+                                Experiments
+                            </ion-button>
+                            <ion-button fill="solid" class="btn-contact" href="mailto:erikcodes@icloud.com">
+                                Contact me
+                            </ion-button>
+                        </ion-buttons>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-toolbar>
+    </ion-header>
+    <section id="home">
+        <ion-grid fixed>
+            <ion-row>
+                <ion-col size="12" sizeMd="8" class="text-container">
+                    <p>Ciao, I’m Erik a developer from Sivar 👋🏻</p>
+                    <h1>
+                        I build <span class="gradient-text">mindful</span> user experiences &
+                        <span class="hide-web">beautiful interfaces</span>
+                    </h1>
+                    <h1 class="text-typing hide-app">
+                        beautiful
+                        <span>
+                            <ngx-sbz-type-delete [wordArray]="['apps.','webs.','interfaces.']"
+                                [deleteSpeedMilliseconds]="250" [typingSpeedMilliseconds]="250" blinkWidth="10px"
+                                textColor="#ffffff" fontSize="4.5rem">
+                            </ngx-sbz-type-delete>
+                        </span>
+                    </h1>
+                    <ion-button expand="block" fill="clear" class="ion-no-padding" href="mailto:erikcodes@icloud.com">
+                        <ion-label>
+                            LET’S WORK TOGETHER
+                        </ion-label>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </ion-button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </section>
+    <section id="about">
+        <img src="assets/images/squares-1.svg" alt="" class="pattern-1">
+        <ion-grid fixed>
+            <ion-row class="ion-align-items-center">
+                <ion-col size="12" sizeMd="7">
+                    <h1 class="super-title">that's me. Erik.</h1>
+                    <p>
+                        As a <b>full-stack developer 🧑🏻‍💻</b> I enjoy designing highly interactive user interfaces
+                        that enthuse customers and creating scalable, reliable backend solutions - but also caring about
+                        the other parts that are needed for a <b>successful software project:</b> Consistency in design,
+                        good planning of UI and thinking how it affects the UX, Search Engine Optimization and
+                        maintaining the software after initial release.
+                    </p>
+                    <br>
+                    <p>
+                        I enjoy creating <b>things that live on the internet 🌎,</b> whether that be websites,
+                        applications, or anything in between. My goal is to always build products that provide
+                        pixel-perfect, performant experiences.
+                    </p>
+                    <br>
+                    <ion-button href="mailto:erikcodes@icloud.com">
+                        <ion-label>
+                            Work with me
+                        </ion-label>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </ion-button>
+                </ion-col>
+                <ion-col size="12" sizeMd="4.5" offset=".5" class="hide-app">
+                    <div class="hero-image">
+                        <img class="hero-image" src="assets/images/me.png" alt="">
+                        <div class="hero-backdrop"></div>
+                        <div class="hero-circle-wrapper">
+                            <img src="https://uploads-ssl.webflow.com/60a11f286cce9b4ccbc7fa02/60b9f24d1d903950194b8ec2_hero__text-circle.svg"
+                                alt="">
+                        </div>
+                        <div class="hero-floating-element is-one">
+                            <img src="https://uploads-ssl.webflow.com/60a11f286cce9b4ccbc7fa02/61897147f7fb3dcf5cae2c77_item-webflow.svg"
+                                alt="" class="floating-element__image">
+                        </div>
+                        <div class="hero-floating-element is-two">
+                            <img src="assets/images/js.png" alt="" class="floating-element__image">
+                        </div>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </section>
+    <section id="services">
+        <ion-grid fixed>
+            <ion-row class="ion-align-items-center">
+                <ion-col size="12" sizeMd="3.5" class="title">
+                    <h1>
+                        <span class="gradient-text">what I do</span>
+                        <br>
+                        for my customers
+                    </h1>
+                    <p class="description">
+                        I can help you better understand user needs and increase the quality of every digital product.
+                    </p>
+                    <ion-button href="mailto:erikcodes@icloud.com">
+                        <ion-label>
+                            Work with me
+                        </ion-label>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </ion-button>
+                </ion-col>
+                <ion-col size="12" sizeMd="4" offsetMd=".5">
+                    <ion-card>
+                        <ion-card-content>
+                            <div class="circle green-lighter">
+                                <ion-icon class="icon-paint" style="color: #38ca79;"></ion-icon>
+                            </div>
+                            <h5>Product Design<br>&amp; UI/UX</h5>
+                            <p>Websites, application or other design related tasks. I love tackling
+                                digital problems.</p>
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
+                <ion-col size="12" sizeMd="4">
+                    <ion-card>
+                        <ion-card-content>
+                            <div class="circle purple-lighter">
+                                <ion-icon class="icon-lamp" style="color: #545bda;"></ion-icon>
+                            </div>
+                            <h5>Strategy<br>&amp; Direction</h5>
+                            <p>Defining the problem, identifying the scope and finally, organising.</p>
+                        </ion-card-content>
+                    </ion-card>
+                    <ion-card>
+                        <ion-card-content>
+                            <div class="circle orange-lighter">
+                                <ion-icon class="icon-play" style="color: #ff4f35;"></ion-icon>
+                            </div>
+                            <h5>Motion Graphics<br>&amp; Animation</h5>
+                            <p>Every interaction you apply to your brand makes you stronger and more priority.</p>
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+        <img src="assets/images/squares-1.svg" alt="" class="pattern-1 ion-margin-top">
+    </section>
+    <section id="projects">
+        <img src="assets/images/squares-1.svg" alt="" class="pattern-1">
+        <img src="assets/images/squares-2.svg" alt="" class="pattern-3">
+        <ion-grid fixed>
+            <ion-row>
+                <ion-col size="12">
+                    <p class="sub-title">Selected Projects</p>
+                    <h1>
+                        A small selection
+                        <br>
+                        of my <span class="gradient-text">projects.</span>
+                    </h1>
+                </ion-col>
+                <ion-col size="12" sizeXl="5">
+                    <ion-card (click)="workingOnThat()">
+                        <ion-card-header>
+                            <img src="assets/images/shopin.png" alt="" class="company-logo">
+                            <h3>Shopin</h3>
+                            <p>
+                                Shopin is a mobile app to buy and sell items in your area or make shipments. Yes, a
+                                simple
+                                marketplace 😅
+                            </p>
+                        </ion-card-header>
+                        <ion-card-content class="second-card">
+                            <img src="assets/images/shopin-sc.png" alt="" style="margin-bottom: -27px;">
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
+                <ion-col size="12" sizeXl="7">
+                    <ion-card (click)="workingOnThat()">
+                        <ion-card-header style="padding-bottom: 20px;">
+                            <img src="assets/images/portfolio.png" alt="" class="company-logo">
+                            <h3>My portfolio</h3>
+                            <p>
+                                I decided to build and design my portfolio with Angular and Ionic ... and I can tell you
+                                that is one of the best things I've ever learn 🤑
+                            </p>
+                        </ion-card-header>
+                        <ion-card-content class="third-card">
+                            <img src="assets/images/portfolio-sc.png" alt=""
+                                style="margin-bottom: -74px; margin-top: -35px;">
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+        <ion-grid fixed>
+            <ion-row>
+                <ion-col size="12" sizeXl="7">
+                    <ion-card (click)="workingOnThat()">
+                        <ion-card-header>
+                            <img src="https://is2-ssl.mzstatic.com/image/thumb/Purple114/v4/18/86/60/18866099-c8f3-f8ec-cb44-d9a5f843d44c/source/512x512bb.jpg"
+                                alt="" class="company-logo">
+                            <h3>FreeStyle by Billy Grimaldi</h3>
+                            <p>
+                                A client website that I built in Wix (I fucking hate it 🤮). This was my first paid
+                                client site in which I still actively maintain and talk with the owner in terms of
+                                revisions and/or updates to the site.
+                            </p>
+                        </ion-card-header>
+                        <ion-card-content class="first-card">
+                            <img src="assets/images/freestylebg47.png"
+                                style="margin-left: auto; display: flex; margin-bottom: -5px;" alt="">
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
+                <ion-col size="12" sizeXl="5">
+                    <ion-card (click)="workingOnThat()">
+                        <ion-card-header>
+                            <img src="assets/images/urra.webp" alt="" class="company-logo">
+                            <h3>Urra App</h3>
+                            <p>
+                                Urra is a platform that connects people who want to buy items around the world, with
+                                travelers who go to their countries willing to transport and deliver their items.
+                            </p>
+                        </ion-card-header>
+                        <ion-card-content class="second-card">
+                            <img src="assets/images/urra-sc.png" alt="" style="margin-bottom: -25px;">
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
+                <ion-col size="12">
+                    <div class="carroussel__wrapper">
+                        <div class="caroussel__gradient"></div>
+                        <div class="caroussel__items">
+                            <div class="caroussel__item">digital design code development full-stack</div>
+                            <div class="caroussel__item">digital design code development full-stack</div>
+                        </div>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </section>
+    <section id="laboratory">
+        <ion-grid fixed>
+            <ion-row>
+                <ion-col size="4">
+                    <div class="text-content">
+                        <h2>Some things I have built</h2>
+                        <p class="paragraph-9 left">
+                            Swipe or drag to see a small selection of <br> projects I've worked on.
+                        </p>
+                        <div class="d-flex w-100">
+                            <ion-button expand="block" color="medium" fill="clear" class="w-100" (click)="swipePrev()">
+                                <ion-icon color="light" name="chevron-back-outline"></ion-icon>
+                            </ion-button>
+                            <ion-button expand="block" color="medium" fill="clear" class="w-100" (click)="swipeNext()">
+                                <ion-icon color="light" name="chevron-forward-outline"></ion-icon>
+                            </ion-button>
+                        </div>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+        <div class="slider-overlay"></div>
+        <ion-slides [options]="slideOptions" #mySlider>
+            <ion-slide>
+                <ion-card (click)="workingOnThat()" target="_blank">
+                    <ion-card-content>
+                        <img src="assets/images/experiment-1.png" alt="">
+                        <div>
+                            <div class="team-role">Codepen</div>
+                            <h3 class="team-name">3D Carousel</h3>
+                        </div>
+                    </ion-card-content>
+                </ion-card>
+            </ion-slide>
+            <ion-slide>
+                <ion-card (click)="workingOnThat()">
+                    <ion-card-content>
+                        <img src="assets/images/experiment-4.png" alt="">
+                        <div>
+                            <div class="team-role">Codepen</div>
+                            <h3 class="team-name">Password generator</h3>
+                        </div>
+                    </ion-card-content>
+                </ion-card>
+            </ion-slide>
+            <ion-slide>
+                <ion-card (click)="workingOnThat()">
+                    <ion-card-content>
+                        <img src="assets/images/experiment-5.png" alt="">
+                        <div>
+                            <div class="team-role">Codepen</div>
+                            <h3 class="team-name">Simple card</h3>
+                        </div>
+                    </ion-card-content>
+                </ion-card>
+            </ion-slide>
+            <ion-slide>
+                <ion-card (click)="workingOnThat()" target="_blank">
+                    <ion-card-content>
+                        <img src="assets/images/experiment-2.png" alt="">
+                        <div>
+                            <div class="team-role">Codepen</div>
+                            <h3 class="team-name">Puzzle game</h3>
+                        </div>
+                    </ion-card-content>
+                </ion-card>
+            </ion-slide>
+            <ion-slide>
+                <ion-card (click)="workingOnThat()">
+                    <ion-card-content>
+                        <img src="assets/images/experiment-3.png" alt="">
+                        <div>
+                            <div class="team-role">Codepen</div>
+                            <h3 class="team-name">Expanding flex cards</h3>
+                        </div>
+                    </ion-card-content>
+                </ion-card>
+            </ion-slide>
+            <ion-slide>
+            </ion-slide>
+        </ion-slides>
+    </section>
+    <section id="contact">
+        <ion-grid fixed>
+            <ion-row>
+                <ion-col size="12">
+                    <ion-card>
+                        <ion-card-content class="ion-text-center">
+                            <h1>🤝</h1>
+                            <h3>Let's create awesome work together!</h3>
+                            <p>I’m available for new challenging collaborations &amp; projects. Let’s get in contact,
+                                I’m happy to
+                                help you:)</p>
+                            <ion-button shape="round" href="mailto:erikcodes@icloud.com">
+                                <ion-icon slot="start" name="mail"></ion-icon>
+                                erikcodes@icloud.com
+                            </ion-button>
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </section>
+    <ion-footer class="ion-no-border hide-app">
+        <ion-toolbar>
+            <ion-grid fixed>
+                <ion-row>
+                    <ion-col size="4">
+                        <h1>
+                            Have a project?
+                        </h1>
+                        <ion-button expand="block" color="light" fill="clear" class="ion-no-padding"
+                            href="mailto:erikcodes@icloud.com">
+                            <ion-label>
+                                LET’S MAKE SOMETHING TOGETHER!
+                            </ion-label>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </ion-button>
+                        <p class="copyright">Copyright © 2021 ErikCodes. All rights reserved.</p>
+                    </ion-col>
+                    <ion-col size="4" offset="1" class="list-container">
+                        <div class="footer-list">
+                            <p>Social</p>
+                            <ul>
+                                <li>
+                                    <a class="link hover-1" href="https://www.instagram.com/erik.codes" target="_new"
+                                        data-barba-prevent="">instagram</a>
+                                </li>
+                                <li>
+                                    <a class="link hover-1" href="https://github.com/erikodes" target="_new"
+                                        data-barba-prevent="">github</a>
+                                </li>
+                                <li>
+                                    <a class="link hover-1" href="https://twitter.com/erik_codes" target="_new"
+                                        data-barba-prevent="">twitter</a>
+                                </li>
+                                <li>
+                                    <a class="link hover-1" href="https://www.tiktok.com/@erikcodes" target="_new"
+                                        data-barba-prevent="">tiktok</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-list">
+                            <p>Navigation</p>
+                            <ul>
+                                <li>
+                                    <a class="link hover-1" (click)="scrollTo('about')">about</a>
+                                </li>
+                                <li>
+                                    <a class="link hover-1" (click)="scrollTo('services')">services</a>
+                                </li>
+                                <li>
+                                    <a class="link hover-1" (click)="scrollTo('projects')">projects</a>
+                                </li>
+                                <li>
+                                    <a class="link hover-1" (click)="scrollTo('laboratory')">experiments</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </ion-col>
+                    <ion-col size="2" offset="1" class="coffe-container">
+                        <h4>Buy me a coffee</h4>
+                        <img src="assets/images/coffe.png" alt="" width="100%">
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-toolbar>
+    </ion-footer>
+</ion-content>
