@@ -1,35 +1,37 @@
 <ion-app>
     <ion-router-outlet></ion-router-outlet>
-    <div class="alert hidden-xs-down" [ngClass]="{'hide': !cookies}">
-        <ion-label>I use your cookies to give you the best experience. <strong
-                style="text-decoration: underline;">Cookie Policy.</strong></ion-label>
-        <ion-button expand="block" color="light" (click)="closeCookies()">
-            OK
-        </ion-button>
-        <ion-button expand="block" (click)="closeCookies()">
-            Don't Track Me
-        </ion-button>
-    </div>
-    <div class="social-ico-block hide-app">
-        <a href="https://www.instagram.com/erik.codes/" target="_blank" class="social-ico">
-            <!-- instagram -->
-            <ion-icon class="icon-instagram"></ion-icon>
-        </a>
-        <a href="https://github.com/erikodes" target="_blank" class="social-ico">
-            <!-- github -->
-            <ion-icon class="icon-github"></ion-icon>
-        </a>
-        <a href="https://www.twitter.com/erik_codes" target="_blank" class="social-ico">
-            <!-- twitter -->
-            <ion-icon class="icon-twitter"></ion-icon>
-        </a>
-        <a href="https://www.tiktok.com/@erikcodes" target="_blank" class="social-ico">
-            <!-- tiktok -->
-            <ion-icon class="icon-tiktok"></ion-icon>
-        </a>
-    </div>
-    <div class="bottom-sidebar hide-app">
-        <p class="madeIn">CRAFTED WITH <ion-text color="danger">❤</ion-text>
-        </p>
+    <div class="items" [ngClass]="{'show': data}">
+        <div class="alert hidden-xs-down hide-app" [ngClass]="{'hide': !cookies}">
+            <ion-label>I use your cookies to give you the best experience. <strong
+                    style="text-decoration: underline;">Cookie Policy.</strong></ion-label>
+            <ion-button expand="block" color="light" (click)="closeCookies()">
+                OK
+            </ion-button>
+            <ion-button expand="block" (click)="closeCookies()">
+                Don't Track Me
+            </ion-button>
+        </div>
+        <div class="social-ico-block hide-app">
+            <a href="https://www.instagram.com/erik.codes/" target="_blank" class="social-ico">
+                <!-- instagram -->
+                <ion-icon class="icon-instagram"></ion-icon>
+            </a>
+            <a href="https://github.com/erikodes" target="_blank" class="social-ico">
+                <!-- github -->
+                <ion-icon class="icon-github"></ion-icon>
+            </a>
+            <a href="https://www.twitter.com/erik_codes" target="_blank" class="social-ico">
+                <!-- twitter -->
+                <ion-icon class="icon-twitter"></ion-icon>
+            </a>
+            <a href="https://www.tiktok.com/@erikcodes" target="_blank" class="social-ico">
+                <!-- tiktok -->
+                <ion-icon class="icon-tiktok"></ion-icon>
+            </a>
+        </div>
+        <div class="bottom-sidebar hide-app">
+            <p class="madeIn">CRAFTED WITH <ion-text color="danger">❤</ion-text>
+            </p>
+        </div>
     </div>
 </ion-app>

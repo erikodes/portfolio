@@ -8,8 +8,7 @@ const routes: Routes = [
     },
     {
         path: '',
-        redirectTo: 'home',
-        pathMatch: 'full'
+        loadChildren: () => import('./pages/splash/splash.module').then(m => m.SplashPageModule)
     },
 ];
 

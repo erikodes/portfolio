@@ -82,9 +82,14 @@
 }
 
 .show {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .hide {
+  opacity: 0;
+}
+
+.items {
+  transition: 0.3s;
   opacity: 0;
 }
