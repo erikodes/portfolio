@@ -255,7 +255,7 @@ ion-header {
     width: 4rem;
     height: 4rem;
     animation: floatingelement 6s ease-in-out infinite;
-    filter: grayscale(1);
+    filter: hue-rotate(30deg);
   }
   .is-two {
     left: auto;
@@ -369,7 +369,7 @@ ion-header {
   }
 
   .green-lighter {
-    background-color: rgb(191 237 210 / 35%);
+    background-color: rgb(70 215 233 / 15%);
   }
 
   .purple-lighter {
@@ -377,7 +377,7 @@ ion-header {
   }
 
   .orange-lighter {
-    background-color: rgb(255 80 54 / 10%);
+    background-color: rgb(247 95 209 / 8%);
   }
 }
 
