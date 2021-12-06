@@ -207,10 +207,6 @@ ion-header {
       -o-object-fit: cover;
       object-fit: cover;
       transition: all 0.8s ease-out;
-      &:hover {
-        border-color: var(--ion-color-light);
-        filter: invert(1);
-      }
     }
     .hero-backdrop {
       position: absolute;
@@ -271,7 +267,6 @@ ion-header {
     -webkit-transform: rotate(-20deg);
     -ms-transform: rotate(-20deg);
     transform: rotate(-20deg);
-    filter: grayscale(1);
   }
 }
 
@@ -290,9 +285,7 @@ ion-header {
   .description {
     font-size: 18px;
     margin-bottom: 10px;
-    padding-left: 24px;
     color: var(--ion-color-dark);
-    border-left: 1px solid #e0e2ef;
     line-height: 32px;
   }
   ion-button {
@@ -369,6 +362,10 @@ ion-header {
 
   ion-col {
     z-index: 111;
+  }
+
+  .more-bottom {
+    margin-bottom: 40px;
   }
 
   .green-lighter {
@@ -716,6 +713,9 @@ ion-footer {
     ion-card {
       margin: 16px;
       margin-top: 0;
+    }
+    .more-bottom {
+      margin-bottom: 16px;
     }
   }
   #contact {
