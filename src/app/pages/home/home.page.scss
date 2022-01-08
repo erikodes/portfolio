@@ -548,7 +548,8 @@ ion-header {
 #contact {
   background: black;
   ion-card {
-    background-image: url(https://usebasin.com/assets/website/footer_bg-8abcd286c113fb8f57daf23184421e383b7cdbf6247b3c5dbc53542ea13b0c54.svg) !important;
+    background-image: url(../../../assets/images/contact-bg.png) !important;
+    border-radius: 35px;
     background: #141414;
     margin: 0;
     filter: hue-rotate(60deg);
